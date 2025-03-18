@@ -10,7 +10,6 @@ const server = http.createServer(async (req, res) => {
 
     if(method === 'GET' && url === '/users') {
         return res
-        .setHeader('Content-type', 'application/json')
         .end(JSON.stringify(users))
     }
 
