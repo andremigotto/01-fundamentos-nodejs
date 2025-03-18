@@ -18,7 +18,6 @@ const server = http.createServer(async (req, res) => {
     }
 
     if(method === 'POST' && url === '/users') {
-
         const {name, email} = req.body
 
         const user = {
